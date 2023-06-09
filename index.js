@@ -191,7 +191,7 @@ function log(message) {
 }
 
 function date() {
-  var tzoffset = ((new Date()).getTimezoneOffset() + 4.5*60) * 60000
+  var tzoffset = -3.5 * 60000
   var localISOTime = (new Date(Date.now() - tzoffset)).toISOString().slice(0, -1)
   return localISOTime
 }
